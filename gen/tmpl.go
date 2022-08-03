@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/chrsan/wagu/gen/internal"
-	"github.com/chrsan/wagu/ir"
+	"github.com/crazyinfin8/wagu/gen/internal"
+	"github.com/crazyinfin8/wagu/ir"
 )
 
 //go:generate go run github.com/go-bindata/go-bindata/go-bindata -o=internal/bindata.go -pkg=internal -modtime=1 ./template/...

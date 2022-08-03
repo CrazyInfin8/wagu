@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"text/template"
 
-	"github.com/chrsan/wagu/ir"
+	"github.com/crazyinfin8/wagu/ir"
 )
 
 // Mem generates source for the mem file.

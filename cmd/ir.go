@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/chrsan/wagu/ir"
+	"github.com/crazyinfin8/wagu/ir"
 	"github.com/go-interpreter/wagon/wasm"
 	"github.com/golang/protobuf/proto"
 	"github.com/spf13/cobra"

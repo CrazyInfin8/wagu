@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"text/template"
 
-	"github.com/chrsan/wagu/ir"
+	"github.com/crazyinfin8/wagu/ir"
 )
 
 // Context generates source for the context file.

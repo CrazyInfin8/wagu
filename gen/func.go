@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"text/template"
 
-	"github.com/chrsan/wagu/ir"
+	"github.com/crazyinfin8/wagu/ir"
 	"github.com/go-interpreter/wagon/wasm/operators"
 )
 

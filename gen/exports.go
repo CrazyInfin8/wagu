@@ -7,7 +7,7 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/chrsan/wagu/ir"
+	"github.com/crazyinfin8/wagu/ir"
 )
 
 // Exports generates source for the exports file.

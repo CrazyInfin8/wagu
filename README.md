@@ -16,7 +16,7 @@ The conversion is done in two steps.
 ## Usage:
 
 ```console
-git clone https://github.com/chrsan/wagu
+git clone https://github.com/crazyinfin8/wagu
 cd wagu
 go run cmd/*.go --help
 ```

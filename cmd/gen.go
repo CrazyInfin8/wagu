@@ -6,8 +6,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/chrsan/wagu/gen"
-	"github.com/chrsan/wagu/ir"
+	"github.com/crazyinfin8/wagu/gen"
+	"github.com/crazyinfin8/wagu/ir"
 	"github.com/golang/protobuf/proto"
 	"github.com/spf13/cobra"
 	"golang.org/x/tools/imports"
