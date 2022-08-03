@@ -1,4 +1,4 @@
-module github.com/chrsan/wagu
+module github.com/crazyinfin8/wagu
 
 go 1.13
 
