@@ -14,7 +14,8 @@ import (
 )
 
 type Context struct {
-	Mem {{ if .MMap }}mmap.MMap{{ else }}[]byte{{ end }}
+	Mem {{ if .MMap }}mmap.MMap{{ else }}[]byte
+	MaxSize int{{ end }}
 	{{- if .M.ImportedFunctions }}
 	f ImportedFuncs
 	{{- end }}
@@ -43,8 +44,24 @@ func (c *Context) Copy() *Context {
 	return &d
 }
 
+var (
+	ErrOutOfMemory = errors.New("out of memory")
+)
+
 func (c *Context) growMem(size int) {
-	c.Mem = append(c.Mem, make([]byte, size)...)
+	if size == 0 {
+		return
+	}
+	newSize := len(c.Mem) + size
+	if c.MaxSize > 0 && newSize > c.MaxSize {
+		if len(c.Mem) >= size {
+			panic(ErrOutOfMemory)
+		}
+		newSize = c.MaxSize
+	}
+	newMem := make([]byte, newSize)
+	copy(newMem, c.Mem)
+	c.Mem = newMem
 }
 {{- end }}
 
